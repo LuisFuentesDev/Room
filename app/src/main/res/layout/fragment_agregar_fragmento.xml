@@ -41,4 +41,15 @@
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="@+id/editTextAgregar"
         app:layout_constraintTop_toBottomOf="@+id/editTextAgregar" />
+
+    <TextView
+        android:id="@+id/textViewMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAgregar"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="@+id/buttonAgregar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAgregar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

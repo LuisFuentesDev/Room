@@ -41,10 +41,11 @@ class AgregarFragmento : Fragment() {
 
     private fun initListener() {
         binding.buttonAgregar.setOnClickListener {
-            
+
             val texto = binding.editTextAgregar.text.toString()
             Toast.makeText(requireContext(), "Tarea Agregada", Toast.LENGTH_SHORT).show()
             guardarTarea(texto)
+            cargarTarea()
         }
     }
 
@@ -54,5 +55,14 @@ class AgregarFragmento : Fragment() {
         GlobalScope.launch { dao.insertarTarea(tarea) }
 
     }
+    private fun cargarTarea(){
+        val dao=TareaBaseDatos.getDatabase(requireContext()).getTaskDao()
+        GlobalScope.launch {
+            val tareas= dao.getTarea()
+            val tareaAsText = tareas.joinToString("\n") {it.nombre}
+            binding.textViewMostrar.text= tareaAsText
+        }
 
+
+    }
 }
