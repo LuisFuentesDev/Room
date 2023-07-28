@@ -43,13 +43,24 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextAgregar" />
 
     <TextView
+        android:id="@+id/textViewRegistradas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Tareas Registradas"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonAgregar"
+        app:layout_constraintStart_toStartOf="@+id/buttonAgregar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAgregar" />
+
+    <TextView
         android:id="@+id/textViewMostrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/buttonAgregar"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="@+id/buttonAgregar"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAgregar" />
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRegistradas"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="@+id/textViewRegistradas"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegistradas" />
 </androidx.constraintlayout.widget.ConstraintLayout>
