@@ -35,6 +35,7 @@ class AgregarFragmento : Fragment() {
         binding = FragmentAgregarFragmentoBinding.inflate(layoutInflater, container, false)
         initReposotorio()
         initListener()
+        cargarTarea()
         return binding.root
     }
 
